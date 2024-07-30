@@ -94,7 +94,7 @@ export const notes = [
       id: 14,
       translations: {
         en: "If you don't want to do something, try at least for five minutes. \nBut there is nothing wrong with you if you rest today.",
-        ru: "Если оченьт не хочется что-то делать, то начни хотя бы с пяти минут. \nНо ничего страшного, если ты просто отдохнешь сегодня."
+        ru: "Если очень не хочется что-то делать, то начни хотя бы с пяти минут. \nНо ничего страшного, если ты просто отдохнешь сегодня."
       }
     },
     {

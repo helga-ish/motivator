@@ -27,6 +27,20 @@
   box-shadow: 0px 2px 0px 1px #d87093;
   font-size: 12px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.change-languages_button:hover {
+  color: rgb(255, 204, 0);
+  box-shadow: 0px 2px 0px 1px rgb(255, 204, 0);
+  border: 3px solid rgb(255, 204, 0);
+  background-color: white;
+}
+
+.change-languages_button:active {
+  color: #008000;
+  box-shadow: 0px 2px 0px 1px #008000;
+  border: 3px solid #008000;
 }
 
 .button {
@@ -42,13 +56,14 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button:hover {
   color: rgb(66, 117, 228);
-  box-shadow: 0px 5px 0px 3px rgb(66, 117, 228);
+  box-shadow: 0px 5px 0px 3px #4275e4;
   border: 3px solid rgb(66, 117, 228);
   background-color: white;
-  /* cursor: url(''); */
+  cursor: pointer;
   
 }
 .button:active {
@@ -86,8 +101,8 @@
   width: max-content;
   height: min-content;
   background-color: white;
-  color: palevioletred;
-  border: 3px solid palevioletred;
+  color: #d87093;
+  border: 3px solid #d87093;
   border-radius: 25px;
   box-shadow: 0px 5px 0px 3px #d87093;
   padding: 15px;
@@ -109,15 +124,16 @@
 
 .note-flower {
   width: 50px;
-
+  cursor: pointer;
 }
 
 .note-button {
   border: none;
   background-color: white;
-  color: rgb(255, 204, 0);
+  color: #008000;
   font-size: 13px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .motivation-note-back-container {
