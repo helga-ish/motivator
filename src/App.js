@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { notes } from './notes';
+import { motivationButtonText } from './motivationButton'
 import flower1 from './images/flower1.svg';
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
 
         <img src={logo} className="App-logo" alt="logo" />
         
-        <button className={buttonVisible} onClick={!isVisible ? handleVisibleState : handleNotVisibleState}>Find your motivation and affirmation here</button>
+        <button className={buttonVisible} onClick={!isVisible ? handleVisibleState : handleNotVisibleState}>{motivationButtonText[language].motivation}</button>
         <div className={noteOpen}>
           <p className="motivation-note">{getNoteText(note)}</p>
           <div className='motivation-note-back-container'>
