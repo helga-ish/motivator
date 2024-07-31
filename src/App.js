@@ -4,6 +4,8 @@ import React from 'react';
 import { notes } from './notes';
 import { motivationButtonText } from './motivationButton'
 import flower1 from './images/flower1.svg';
+import ruLang from './images/ru_language.jpg';
+import engLang from './images/eng_language.png';
 
 function App() {
 
@@ -47,8 +49,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="change-languages">
-          <button className='change-languages_button' onClick={() => setLanguage('en')}>English</button>
-          <button className='change-languages_button' onClick={() => setLanguage('ru')}>Русский</button>
+          <button className='change-languages_button' onClick={() => setLanguage('en')}><img src={engLang} className='change-languages_button_eng' />English</button>
+          <button className='change-languages_button' onClick={() => setLanguage('ru')}><img src={ruLang} className='change-languages_button_ru'/>Русский</button>
         </div>
 
         <img src={logo} className="App-logo" alt="logo" />
