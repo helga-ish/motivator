@@ -65,6 +65,7 @@ function App() {
           </div>
         </div>
       </header>
+      <footer className='App-footer'><p className='footer__text'>Made by</p><a className='footer__link' href='https://www.instagram.com/helga_ish/'> Helga Ish</a></footer>
     </div>
   );
 }
