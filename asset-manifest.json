@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/motivator/static/css/main.fd024643.css",
+    "main.js": "/motivator/static/js/main.28384c70.js",
+    "static/js/453.0ceb8fb7.chunk.js": "/motivator/static/js/453.0ceb8fb7.chunk.js",
+    "static/media/Rubik-Bold.ttf": "/motivator/static/media/Rubik-Bold.c934eb22c2c69992b34c.ttf",
+    "static/media/Rubik-Medium.ttf": "/motivator/static/media/Rubik-Medium.0e121b4fa4d6e9bc5c69.ttf",
+    "static/media/Rubik-Black.ttf": "/motivator/static/media/Rubik-Black.a41b3ae4e67200950946.ttf",
+    "static/media/Rubik-Regular.ttf": "/motivator/static/media/Rubik-Regular.55fa11cdc8b9a3ee842f.ttf",
+    "static/media/background1.jpg": "/motivator/static/media/background1.3182372c9adb540f8553.jpg",
+    "static/media/ru_language.png": "/motivator/static/media/ru_language.cfd4c4ade0d13d0928fc.png",
+    "static/media/eng_language.png": "/motivator/static/media/eng_language.da0210f3d71e4cf3e7f4.png",
+    "static/media/flower1.svg": "/motivator/static/media/flower1.f1f9bafd5c22d71c7531d194e75c878d.svg",
+    "static/media/logo.svg": "/motivator/static/media/logo.0e7c8a74e36ffe5d159515591560037f.svg",
+    "index.html": "/motivator/index.html",
+    "main.fd024643.css.map": "/motivator/static/css/main.fd024643.css.map",
+    "main.28384c70.js.map": "/motivator/static/js/main.28384c70.js.map",
+    "453.0ceb8fb7.chunk.js.map": "/motivator/static/js/453.0ceb8fb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd024643.css",
+    "static/js/main.28384c70.js"
+  ]
+}
