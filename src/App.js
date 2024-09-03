@@ -44,17 +44,17 @@ function App() {
 
   // переключаем классы в зависимости от того, что открыто: кнопка или текст
   const noteOpen = `motivation-note-container ${isOpen ? '' : 'motivation-note-container_disabled'}`;
-  const buttonVisible = `button ${!isVisible ? 'button_disabled' : ''}`;
+  const buttonVisible = `motivation-button ${!isVisible ? 'motivation-button_disabled' : ''}`;
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="motivator">
+      <header className="motivator-header">
         <div className="change-languages">
           <button className={`change-languages_button ${language === 'en' ? 'active' : 'inactive'}`} onClick={() => setLanguage('en')}><img src={engLang} className='change-languages_button_eng' />English</button>
-          <button className={`change-languages_button ${language === 'ru' ? 'active' : 'inactive'}`} onClick={() => setLanguage('ru')}><img src={ruLang} className='change-languages_button_ru'/>Русский</button>
+          <button className={`change-languages_button ${language === 'ru' ? 'active' : 'inactive'}`} onClick={() => setLanguage('ru')}><img src={ruLang} className='change-languages_button_ru'/>Руcский</button>
         </div>
 
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="motivator-logo" alt="logo" />
         
         <button className={buttonVisible} onClick={!isVisible ? handleVisibleState : handleNotVisibleState}>{motivationButtonText[language].motivation}</button>
         <div className={noteOpen}>
@@ -65,7 +65,7 @@ function App() {
           </div>
         </div>
       </header>
-      <footer className='App-footer'><p className='footer__text'>Made by</p><a className='footer__link' href='https://www.instagram.com/helga_ish/'> Helga Ish</a></footer>
+      <footer className='motivator-footer'><p className='footer__text'>Made by</p><a className='footer__link' href='https://www.instagram.com/helga_ish/'> Helga Ish</a></footer>
     </div>
   );
 }

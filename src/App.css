@@ -1,4 +1,4 @@
-.App {
+.motivator {
   /* cursor: url(''); */
   display: grid;
   grid-template-rows: 80vh 20vh;
@@ -7,6 +7,16 @@
   background-size: 400px;
   background-position: center;
   background-repeat: repeat;
+}
+
+.motivator-header {
+  min-height: min-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25vh 25vh 50vh;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .change-languages {
@@ -32,20 +42,20 @@
 .change-languages_button:hover {
   color: rgb(255, 204, 0);
   box-shadow: 0px 2px 0px 1px rgb(255, 204, 0);
-  border: 3px solid rgb(255, 204, 0);
+  border: 1px solid rgb(255, 204, 0);
   background-color: white;
 }
 
 .change-languages_button.active {
   color: #008000;
   box-shadow: 0px 2px 0px 1px rgb(0, 128, 0);
-  border: 3px solid #008000;
+  border: 1px solid #008000;
 }
 
 .change-languages_button.inactive {
   color:palevioletred;
   box-shadow: 0px 2px 0px 1px #d87093;
-  border: 3px solid #d87093;
+  border: 1px solid #d87093;
 }
 
 .change-languages_button_eng {
@@ -56,7 +66,7 @@
   width: 20px;
 }
 
-.button {
+.motivation-button {
   width: 300px;
   height: 70px;
   justify-self: center;
@@ -71,7 +81,7 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-.button:hover {
+.motivation-button:hover {
   color: rgb(66, 117, 228);
   box-shadow: 0px 5px 0px 3px #4275e4;
   border: 3px solid rgb(66, 117, 228);
@@ -79,31 +89,22 @@
   cursor: pointer;
   
 }
-.button:active {
+.motivation-button:active {
   color: rgb(255, 204, 0);
   box-shadow: 0px 5px 0px 3px rgb(255, 204, 0);
   border: 3px solid rgb(255, 204, 0);
 }
 
-.button_disabled {
+.motivation-button_disabled {
   display: none;
 }
 
-.App-logo {
+.motivator-logo {
   height: 40vmin;
   align-self: flex-end;
   justify-self: center;
 }
 
-.App-header {
-  min-height: min-content;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 25vh 25vh 50vh;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .motivation-note-container {
   display: flex;
@@ -129,6 +130,7 @@
   text-align: center;
   padding: 0;
   white-space: pre-wrap;
+  flex-wrap: wrap;
 }
 
 .motivation-note-container_disabled {
@@ -158,7 +160,7 @@
   padding: 2px;
 }
 
-.App-footer {
+.motivator-footer {
   display: flex;
   background: linear-gradient(to bottom, rgba(255, 192, 203, 0) 0%, rgb(216, 112, 147) 100%);
   background-size: cover;
@@ -191,8 +193,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .motivator-logo {
+    animation: motivator-logo-spin infinite 20s linear;
     transition: animation-duration 0.5s ease-in-out;
     animation-delay: 2s;
   }
@@ -204,7 +206,7 @@
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes motivator-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -219,5 +221,92 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .change-languages {
+    flex-direction: row;
+  }
+  
+  .change-languages_button {
+    font-size: 10px;
+    width: 60px;
+    height: 50px;
+  }
+
+  .motivation-button {
+    width: 250px;
+    height: 60px;
+    box-shadow: 0px 3px 0px 1px #d87093;
+    font-size: 14px;
+  }
+
+  .motivation-button:hover {
+    box-shadow: 0px 3px 0px 1px #4275e4;
+  }
+
+  .motivation-button:active {
+    box-shadow: 0px 3px 0px 1px rgb(255, 204, 0);
+  }
+
+  .motivation-note-container {
+    width: 350px;
+    height: min-content;
+    box-shadow: 0px 3px 0px 1px rgb(216, 112, 147);
+    padding: 5px;
+  }
+
+  .motivation-note {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .motivation-button {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  .change-languages_button {
+    display: flex;
+    width: 90px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .motivation-note-container {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .change-languages_button {
+    width: 70px;
+    height: 30px;
+    font-size: 9px;
+    gap: 2px;
+  }
+
+  .motivation-button {
+    width: 150px;
+    font-size: 10px;
+    box-shadow: 0px 1px 0px 1px #d87093;
+  }
+
+  .motivation-button:hover {
+    box-shadow: 0px 1px 0px 1px #4275e4;
+  }
+
+  .motivation-button:active {
+    box-shadow: 0px 1px 0px 1px rgb(255, 204, 0);
+  }
+
+  .motivation-note-container {
+    box-shadow: 0px 1px 0px 1px rgb(216, 112, 147);
   }
 }
