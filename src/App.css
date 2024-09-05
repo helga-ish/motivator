@@ -47,15 +47,15 @@
 }
 
 .change-languages_button.active {
-  color: #008000;
-  box-shadow: 0px 2px 0px 1px rgb(0, 128, 0);
-  border: 1px solid #008000;
+  color: #d87093;
+  box-shadow: 0px 2px 0px 1px rgb(216, 112, 147);
+  border: 1px solid rgb(216, 112, 147);
 }
 
 .change-languages_button.inactive {
-  color:palevioletred;
-  box-shadow: 0px 2px 0px 1px #d87093;
-  border: 1px solid #d87093;
+  color:rgb(84, 81, 81);
+  box-shadow: 0px 2px 0px 1px rgb(84, 81, 81);
+  border: 1px solid rgb(84, 81, 81);
 }
 
 .change-languages_button_eng {
@@ -114,7 +114,7 @@
   align-content: center;
   width: max-content;
   height: min-content;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #d87093;
   border: 3px solid #d87093;
   border-radius: 25px;
@@ -137,16 +137,16 @@
 }
 
 .note-flower {
-  width: 50px;
+  width: 40px;
   cursor: pointer;
 }
 
 .note-button {
   border: none;
   background-color: white;
-  color: #008000;
-  font-size: 13px;
-  font-weight: bold;
+  color: rgb(84, 81, 81);
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
 }
 
